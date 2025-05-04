@@ -82,6 +82,7 @@ ul.float-box li.active { box-shadow: 0 0 0 1px #337ab7 inset, 0 0 0 1px #CCCCCC;
 body.dev #top nav { background: #0c1b29; }
 body.test #top nav { background: #224422; }
 body.test #content { background: #f0fff0; }
+body.test.bg-dark #content { background: #003300; }
 
 .navbar-inverse .navbar-nav > li > a { font-size: 1.1em; color: #BBB; }
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus { color: #fff; background-color: transparent; }
@@ -139,7 +140,8 @@ form.editable-form button { background: white; color: #333; border: 1px solid; b
 /* ================ Flatten, visually simplify bootstrap.min.css =============== */
 /* Comment or delete these for the default backgrounds, etc */
 
-.panel-default>.panel-heading, .panel-info>.panel-heading, .panel-success>.panel-heading, .panel-warning>.panel-heading, .bg-dark .panel-default>.panel-heading
+.panel-default>.panel-heading, .panel-info>.panel-heading, .panel-success>.panel-heading, .panel-warning>.panel-heading,
+  .panel-danger>.panel-heading, .bg-dark .panel-default>.panel-heading
 { background-color: transparent; border-bottom-color: transparent; }
 
 nav.form-list-nav, table.table>thead>tr>th, .bg-dark nav.form-list-nav, .bg-dark table.table>thead>tr>th
@@ -149,3 +151,19 @@ nav.form-list-nav, table.table>thead>tr>th, .bg-dark nav.form-list-nav, .bg-dark
 { background-color: transparent; }
 
 ul.float-box li, .bg-dark ul.float-box li { background-color: transparent; }
+
+#navbar-buttons .navbar-btn { border-color: transparent; background-color: transparent; color: #9d9d9d; }
+#navbar-buttons .navbar-btn:hover { border-color: #3a3a3a; background-color: #3a3a3a; }
+#navbar-buttons .navbar-btn.btn-default { color: #9d9d9d; }
+#navbar-buttons .navbar-btn.btn-danger { color: #d9534f; }
+#navbar-buttons .navbar-btn.btn-info { color: #46b8da; }
+#navbar-buttons .navbar-btn.btn-success { color: #449d44; }
+#navbar-buttons .navbar-btn.btn-primary { color: #2e6da4; }
+#navbar-buttons .navbar-btn.btn-warning { color: #985f0d; }
+
+#navbar-buttons .navbar-btn .label-default { background-color: #9d9d9d; }
+#navbar-buttons .navbar-btn .label-danger { background-color: #d9534f; }
+#navbar-buttons .navbar-btn .label-info { background-color: #46b8da; }
+#navbar-buttons .navbar-btn .label-success { background-color: #449d44; }
+#navbar-buttons .navbar-btn .label-primary { background-color: #2e6da4; }
+#navbar-buttons .navbar-btn .label-warning { background-color: #985f0d; }
